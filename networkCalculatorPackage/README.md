@@ -1,7 +1,7 @@
 # package_name
 
 Description. 
-The network-calculator-package is used to:
+The networkCalculatorPackage is used to:
 	- calculate sub-networks for ipv4
 	-
 
