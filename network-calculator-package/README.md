@@ -1,8 +1,8 @@
 # package_name
 
 Description. 
-The package package_name is used to:
-	- 
+The network-calculator-package is used to:
+	- calculate sub-networks for ipv4
 	-
 
 ## Installation
@@ -10,18 +10,18 @@ The package package_name is used to:
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install package_name
 
 ```bash
-pip install package_name
+pip install network-calculator-package
 ```
 
 ## Usage
 
 ```python
-from package_name.module1_name import file1_name
-file1_name.my_function()
+from network-calculator import Ipv4NetworkCalculator
+Ipv4NetworkCalculator.function()
 ```
 
 ## Author
-My_name
+Suu Kirinus Nogueira
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
