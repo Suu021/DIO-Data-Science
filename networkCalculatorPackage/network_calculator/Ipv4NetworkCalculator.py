@@ -26,6 +26,8 @@ class Ipv4NetworkCalculator():
         self.set_ip_nums()
         self.set_network_broadcast()
         self.prefix_mask()
+        for key, value in self.get_all().items():
+            print(f'{key}: {value}')
 
     def prefix_mask(self):
         bin_mask = ''
@@ -73,7 +75,6 @@ class Ipv4NetworkCalculator():
     def set_ip_nums(self):
         host_bits = 32-self.prefix
         self.num_ips = pow(2, host_bits)
-        print(self.num_ips)
 
     def ip_with_prefix(self):
         # ex: 192.168.52.75/24
@@ -108,12 +109,13 @@ class Ipv4NetworkCalculator():
             'ip': self.ip,
             'prefix': self.prefix,
             'mask': self.mask,
-            'network': self.network,
+            'gateway': self.network,
             'broadcast': self.broadcast,
-            'number of IPs': self.num_ips
+            'total number of IPs': self.num_ips,
+            'total number of available hosts': (self.num_ips - 2)
         }
 
 
-if __name__ == '__main__':
-    ipv4 = Ipv4NetworkCalculator(ip='192.168.1.1', mask='255.255.255.0')
-    print(ipv4.get_all())
+# if __name__ == '__main__':
+#     ipv4 = Ipv4NetworkCalculator(ip='')
+#     print(ipv4.get_all())

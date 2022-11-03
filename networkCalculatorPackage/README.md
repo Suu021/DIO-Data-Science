@@ -10,14 +10,15 @@ The network-calculator-package is used to:
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install package_name
 
 ```bash
-pip install network-calculator-package
+pip install networkCalculatorPackage
 ```
 
 ## Usage
 
 ```python
-from network-calculator import Ipv4NetworkCalculator
-Ipv4NetworkCalculator.function()
+from networkCalculatorPackage.network_calculator import Ipv4NetworkCalculator
+
+ip = Ipv4NetworkCalculator(ip='192.168.1.1/26')
 ```
 
 ## Author

@@ -7,7 +7,7 @@ with open("requirements.txt") as f:
     requirements = f.read().splitlines()
 
 setup(
-    name="network-calculator",
+    name="network_calculator",
     version="0.0.1",
     author="Suu Kirinus Nogueira",
     author_email="sknogueira28@gmail.com",
