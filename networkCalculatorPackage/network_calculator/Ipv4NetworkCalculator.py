@@ -26,8 +26,9 @@ class Ipv4NetworkCalculator():
         self.set_ip_nums()
         self.set_network_broadcast()
         self.prefix_mask()
+        print("-=-=-= Calculation of subnets =-=-=-\n")
         for key, value in self.get_all().items():
-            print(f'{key}: {value}')
+            print(f'\t{key}: {value}')
 
     def prefix_mask(self):
         bin_mask = ''
